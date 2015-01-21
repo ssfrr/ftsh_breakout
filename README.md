@@ -1,20 +1,20 @@
 ftsh_breakout
 =============
 
-This is a breakout board to connect a (J-Link LITE
-CortexM-9)[https://segger.com/jlink-lite-cortexm.html] to a breadboard.
+This is a breakout board to connect a [J-Link LITE
+CortexM-9](https://segger.com/jlink-lite-cortexm.html) to a breadboard.
 
 Specifically it breaks out the SWDIO and SWCLK pins on the 9-pin Samtec
 FTSH-105-01-L-DV-K header to a 5-pin 0.100" header you can plug into a
 breadboard. The pins are ordered so you can place it right next to an
-(RFDuino)[http://www.rfduino.com/] and program the Nordic chip directly,
+[RFDuino](http://www.rfduino.com/) and program the Nordic chip directly,
 bypassing the Arduino environment.
 
 *WARNING: There's no going back once you've erased the RFDuino bootloader. From
 then on you will need to program it directly using the J-Link (or through your
 own bootloader if you write one.*
 
-I designed the board in (KiCad)[http://www.kicad-pcb.org/], so you'll find here
+I designed the board in [KiCad](http://www.kicad-pcb.org/), so you'll find here
 the project files, as well as the exported Gerbers and GCode files that you can
 use to mill the boards.
 
@@ -35,10 +35,10 @@ starting point.
 ### Get pcb2gcode
 
 There's a bug with the released version of
-(pcb2gcode)[http://sourceforge.net/projects/pcb2gcode/] where multi-pass path
+[pcb2gcode](http://sourceforge.net/projects/pcb2gcode/) where multi-pass path
 generation seems to use too-small a bounding box, so the outside of traces near
 the edge don't get enough clearance. You can download my fork from
-(Github)[https://github.com/ssfrr/pcb2gcode] until the fix gets merged into
+[Github](https://github.com/ssfrr/pcb2gcode) until the fix gets merged into
 master.
 
 ### Check the Makefile
@@ -63,7 +63,7 @@ your CNC running software of choice.
 
 ### Check the gcode
 
-I use (OpenSCAM)[http://openscam.com/], which is a great open-source gcode
+I use [OpenSCAM](http://openscam.com/), which is a great open-source gcode
 viewer that even simulates what the end product will look like after the
 milling is complete. The file `ftsh_breakout_openscam.xml` is a project file
 that includes our gcode files and tool sizes, so you see what the end product
