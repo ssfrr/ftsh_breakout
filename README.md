@@ -71,7 +71,7 @@ milling is complete. The file `ftsh_breakout_openscam.xml` is a project file
 that includes our gcode files and tool sizes, so you see what the end product
 will look like.
 
-![The result gcode in OpenSCAM](http://ssfrr.github.io/ftsh_breakout/openscad_board.png)
+![The result gcode in OpenSCAM](http://ssfrr.github.io/ftsh_breakout/openscam_board.png)
 
 ### Mill It!
 
