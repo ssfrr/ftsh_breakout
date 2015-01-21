@@ -1,0 +1,85 @@
+( pcb2gcode 1.1.4 )
+
+G94     ( Inches per minute feed rate. )
+G20     ( Units == INCHES.             )
+G90     ( Absolute coordinates.        )
+S2500  ( RPM spindle speed.           )
+M3      ( Spindle on clockwise.        )
+
+G64 P0.00500 ( set maximum deviation from commanded toolpath )
+
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+G00 Z0.04000 ( retract )
+
+G00 X-0.01800 Y0.00200 ( rapid move to begin. )
+G01 Z-0.00700 F4.72400 ( plunge. )
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+X-0.01800 Y0.00200
+X-0.01800 Y-0.61600
+X-0.01700 Y-0.61600
+X-0.01700 Y-0.61700
+X0.80600 Y-0.61700
+X0.80600 Y-0.61600
+X0.80700 Y-0.61600
+X0.80700 Y0.01700
+X0.80600 Y0.01700
+X0.80600 Y0.01800
+X-0.01700 Y0.01800
+X-0.01700 Y0.01700
+X-0.01800 Y0.01700
+X-0.01800 Y0.00200
+G01 Z-0.02700 F4.72400 ( plunge. )
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+X-0.01800 Y0.00200
+X-0.01800 Y-0.61600
+X-0.01700 Y-0.61600
+X-0.01700 Y-0.61700
+X0.80600 Y-0.61700
+X0.80600 Y-0.61600
+X0.80700 Y-0.61600
+X0.80700 Y0.01700
+X0.80600 Y0.01700
+X0.80600 Y0.01800
+X-0.01700 Y0.01800
+X-0.01700 Y0.01700
+X-0.01800 Y0.01700
+X-0.01800 Y0.00200
+G01 Z-0.04700 F4.72400 ( plunge. )
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+X-0.01800 Y0.00200
+X-0.01800 Y-0.61600
+X-0.01700 Y-0.61600
+X-0.01700 Y-0.61700
+X0.80600 Y-0.61700
+X0.80600 Y-0.61600
+X0.80700 Y-0.61600
+X0.80700 Y0.01700
+X0.80600 Y0.01700
+X0.80600 Y0.01800
+X-0.01700 Y0.01800
+X-0.01700 Y0.01700
+X-0.01800 Y0.01700
+X-0.01800 Y0.00200
+G01 Z-0.06700 F4.72400 ( plunge. )
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+X-0.01800 Y0.00200
+X-0.01800 Y-0.61600
+X-0.01700 Y-0.61600
+X-0.01700 Y-0.61700
+X0.80600 Y-0.61700
+X0.80600 Y-0.61600
+X0.80700 Y-0.61600
+X0.80700 Y0.01700
+X0.80600 Y0.01700
+X0.80600 Y0.01800
+X-0.01700 Y0.01800
+X-0.01700 Y0.01700
+X-0.01800 Y0.01700
+X-0.01800 Y0.00200
+
+G04 P0 ( dwell for no time -- G64 should not smooth over this point )
+G00 Z0.50000 ( retract )
+
+M9 ( Coolant off. )
+M2 ( Program end. )
+

@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by Cvpcb 0.201501011931+5347~20~ubuntu14.04.1-product   date = Fri 02 Jan 2015 05:45:58 PM EST
+
+BeginCmp
+TimeStamp = /54A6FF95;
+Reference = J1;
+ValeurCmp = FTSH-JTAG;
+IdModule  = FTSH:FTSH-JTAG;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A7008D;
+Reference = P1;
+ValeurCmp = CONN_01X05;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x05;
+EndCmp
+
+EndListe

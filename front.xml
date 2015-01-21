@@ -1,0 +1,24 @@
+<openscam>
+  <!-- Note, all values are in mm regardless of 'units' option. -->
+  <!-- NC Files -->
+  <nc-files>
+    front.ngc outline.ngc drill.ngc
+  </nc-files>
+
+  <!-- Project -->
+  <units v='INCH'/>
+
+  <!-- Renderer -->
+  <resolution v='0.074071'/>
+  <resolution-mode v='VERY_HIGH'/>
+
+  <!-- Workpiece -->
+  <automatic-workpiece v='false'/>
+  <workpiece-max v='(48.26,2.54,0)'/>
+  <workpiece-min v='(-2.54,-48.26,-1.5748)'/>
+
+  <tool_table>
+    <tool length='0.3' number='1' radius='0.0078' shape='CYLINDRICAL' units='INCH'/>
+    <tool length='0.3' number='2' radius='0.01565' shape='CYLINDRICAL' units='INCH'/>
+  </tool_table>
+</openscam>
