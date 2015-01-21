@@ -2,7 +2,7 @@
   <!-- Note, all values are in mm regardless of 'units' option. -->
   <!-- NC Files -->
   <nc-files>
-    front.ngc outline.ngc drill.ngc
+    gcode/front.ngc gcode/outline.ngc gcode/drill.ngc
   </nc-files>
 
   <!-- Project -->
