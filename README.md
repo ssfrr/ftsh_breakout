@@ -16,7 +16,7 @@ bypassing the Arduino environment.
 then on you will need to program it directly using the J-Link (or through your
 own bootloader if you write one.*
 
-I designed the board in [KiCad](http://www.kicad-pcb.org/), so you'll find here
+I designed the board in [KiCad](http://www.kicad.org/), so you'll find here
 the project files, as well as the exported Gerbers and GCode files that you can
 use to mill the boards.
 
